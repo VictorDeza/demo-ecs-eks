@@ -1,8 +1,8 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: lundero-devops
+  name: ces-app
 spec:
   backend:
-    serviceName: lundero-devops
+    serviceName: ces-app
     servicePort: 80

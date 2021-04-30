@@ -3,13 +3,13 @@ kind: Service
 metadata:
   name: currency-exchange-service
   labels:
-    app: lundero-devops
+    app: ces-app
 spec:
   selector:
-    app: lundero-devops
+    app: ces-app
   type: LoadBalancer
   ports:
   - port: 80
     protocol: TCP
     targetPort: 8081
-    name: lundero-devops
+    name: ces-app
