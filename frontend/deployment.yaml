@@ -21,4 +21,4 @@ spec:
         image: 152512582646.dkr.ecr.us-east-2.amazonaws.com/currency-exchange-webapp:1.0
         imagePullPolicy: Always
         ports:
-        - containerPort: 8000
+        - containerPort: 9000

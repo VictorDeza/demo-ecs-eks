@@ -11,5 +11,5 @@ spec:
   ports:
   - port: 80
     protocol: TCP
-    targetPort: 8000
+    targetPort: 9000
     name: cew-app
