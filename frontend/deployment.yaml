@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: cew-app
-  replicas: 3
+  replicas: 1
   strategy:
     type: RollingUpdate
   template:
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: currency-exchange-webapp
-        image: 152512582646.dkr.ecr.us-east-2.amazonaws.com/currency-exchange-webapp:1.0
+        image: 152512582646.dkr.ecr.us-east-2.amazonaws.com/currency-exchange-webapp:2.0
         imagePullPolicy: Always
         ports:
         - containerPort: 9000
