@@ -7,7 +7,6 @@ metadata:
 spec:
   selector:
     app: ces-2-app
-  type: LoadBalancer
   ports:
   - port: 80
     protocol: TCP
