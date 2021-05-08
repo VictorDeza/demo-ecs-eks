@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: currency-exchange-service
+  labels:
+    app: ces-app
+spec:
+  selector:
+    app: ces-app
+  type: LoadBalancer
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 8081
+    name: ces-app

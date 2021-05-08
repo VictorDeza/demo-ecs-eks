@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: currency-exchange-service-2
+  labels:
+    app: ces-2-app
+spec:
+  selector:
+    app: ces-2-app
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 8082
+    name: ces-2-app

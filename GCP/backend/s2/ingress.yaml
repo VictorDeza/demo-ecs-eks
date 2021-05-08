@@ -1,0 +1,8 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ces-2-app
+spec:
+  backend:
+    serviceName: ces-2-app
+    servicePort: 80

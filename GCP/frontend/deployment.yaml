@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: currency-exchange-webapp
+  labels:
+    app: cew-app
+spec:
+  selector:
+    matchLabels:
+      app: cew-app
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: cew-app
+    spec:
+      containers:
+      - name: currency-exchange-webapp
+        image: gcr.io/fluted-volt-309714/currency-exchange-webapp:1.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 9000
